@@ -1,0 +1,184 @@
+/* ─── Contact layout ──────────────────────────── */
+
+.contact-body {
+  padding: var(--section-padding-mobile);
+  background: var(--cream);
+}
+
+@media (min-width: 1024px) {
+  .contact-body {
+    padding: var(--section-padding-desktop);
+  }
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ─── Contact method cards ────────────────────── */
+
+.contact-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow var(--transition);
+}
+
+.contact-card:hover {
+  box-shadow: 0 6px 24px rgba(28, 58, 47, 0.08);
+}
+
+.contact-card--featured {
+  border-top: 3px solid var(--gold);
+}
+
+.contact-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(184, 151, 90, 0.1);
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.contact-card h3 {
+  font-size: 1.25rem;
+  color: var(--green);
+  margin-bottom: 0;
+}
+
+.contact-card-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 100px;
+  padding: 3px 10px;
+  align-self: flex-start;
+}
+
+.contact-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.contact-card-detail {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-card-detail svg {
+  flex-shrink: 0;
+  color: var(--gold);
+}
+
+.contact-card-number {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--green);
+  letter-spacing: 0.02em;
+}
+
+.contact-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.contact-card-actions .btn {
+  justify-content: center;
+  font-size: 0.875rem;
+  padding: 11px 22px;
+}
+
+/* ─── Location block ──────────────────────────── */
+
+.contact-location {
+  background: var(--cream-dark);
+  padding: 48px 0;
+}
+
+.contact-location-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .contact-location-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.contact-location h3 {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.contact-location p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(184, 151, 90, 0.15);
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.location-heading-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.location-divider {
+  width: 1px;
+  height: 48px;
+  background: var(--border);
+  flex-shrink: 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .location-divider {
+    display: block;
+  }
+}

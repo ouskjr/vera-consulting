@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vera Consulting | Independent Property &amp; Project Advisory in Georgia</title>
+  <meta name="description" content="Expert, independent property inspection, renovation audit, and project management for expats and investors in Georgia. No contractor ties. Transparent fees." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+
+  <style>
+    /* Fade-up animation */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-up:nth-child(2) { transition-delay: 0.1s; }
+    .fade-up:nth-child(3) { transition-delay: 0.2s; }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══════════════════════════════════ -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Vera <span>Consulting</span></a>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold nav-cta">Book a Consultation</a>
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="nav-mobile" id="navMobile" aria-hidden="true">
+    <nav class="nav-mobile-links" aria-label="Mobile navigation">
+      <a href="services.html">Services</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-mobile-footer">
+      <a href="contact.html" class="btn btn-gold">Book a Consultation</a>
+      <a href="https://wa.me/995595400404?text=Hi%2C%20I%27m%20interested%20in%20a%20Vera%20Consulting%20service%20for%20a%20property%20in%20Georgia."
+         class="nav-mobile-whatsapp"
+         target="_blank" rel="noopener noreferrer">
+        <i data-lucide="message-circle" width="18" height="18"></i>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══ HERO ══════════════════════════════════════════ -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Independent Advisory — Tbilisi, Georgia</span>
+          <h1>Your Independent Property &amp; Project Advisor in Georgia.</h1>
+          <p class="hero-sub">
+            We protect expats and investors from costly mistakes — before you buy,
+            during renovation, and after completion. No contractor ties.
+            No hidden agenda. Just expert, independent guidance.
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-gold">Book a Consultation</a>
+            <a href="#services-snapshot" class="hero-scroll-link">
+              See our services
+              <i data-lucide="arrow-down" width="16" height="16"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ THREE PILLARS ════════════════════════════════ -->
+    <section class="pillars" aria-labelledby="pillars-heading">
+      <div class="container">
+        <span class="section-label">Why Vera Consulting</span>
+        <h2 class="section-heading" id="pillars-heading">Why Vera Consulting.</h2>
+
+        <div class="pillars-grid">
+
+          <div class="pillar fade-up">
+            <div class="icon-wrap" aria-hidden="true">
+              <i data-lucide="shield" width="22" height="22"></i>
+            </div>
+            <span class="gold-line"></span>
+            <h3>Independent</h3>
+            <p>We work exclusively for you — never for contractors, developers, or agents. Our only incentive is protecting your investment.</p>
+          </div>
+
+          <div class="pillar fade-up">
+            <div class="icon-wrap" aria-hidden="true">
+              <i data-lucide="award" width="22" height="22"></i>
+            </div>
+            <span class="gold-line"></span>
+            <h3>Expert</h3>
+            <p>UK-educated. 5+ years of project management experience across complex renovation and construction projects in Georgia.</p>
+          </div>
+
+          <div class="pillar fade-up">
+            <div class="icon-wrap" aria-hidden="true">
+              <i data-lucide="layers" width="22" height="22"></i>
+            </div>
+            <span class="gold-line"></span>
+            <h3>End-to-End</h3>
+            <p>From property inspection before purchase to snagging checks after completion — we cover every critical phase.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ WHO WE SERVE ══════════════════════════════════ -->
+    <section class="serve" aria-labelledby="serve-heading">
+      <div class="container">
+        <div class="serve-intro">
+          <span class="section-label">Who We Serve</span>
+          <h2 id="serve-heading">Built for people making serious property decisions in Georgia.</h2>
+          <p>
+            Whether you're relocating, investing remotely, or renovating your first property here —
+            the Georgian construction market is complex. Costs are opaque. Contractors are unregulated.
+            Mistakes are expensive. We exist to change that.
+          </p>
+        </div>
+
+        <div class="cards-grid cards-grid--3">
+
+          <div class="serve-card fade-up">
+            <h3>Expats in Georgia</h3>
+            <p>Living here and renovating your home. You need someone who speaks the language — literally and professionally.</p>
+          </div>
+
+          <div class="serve-card fade-up">
+            <h3>Foreign Investors</h3>
+            <p>Buying to rent or flip. You need a trusted local expert who understands real project costs and real market value.</p>
+          </div>
+
+          <div class="serve-card fade-up">
+            <h3>Remote Property Owners</h3>
+            <p>You own a property in Georgia but can't be on-site. We become your eyes, your voice, and your protection.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICES SNAPSHOT ════════════════════════════ -->
+    <section class="services-snapshot" id="services-snapshot" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services-snapshot-head">
+          <span class="section-label">Our Services</span>
+          <h2 id="services-heading" class="section-heading">What we do.</h2>
+          <p class="section-subheading">
+            From pre-purchase inspection to full project management —
+            every service is independent, transparent, and delivered by a qualified expert.
+          </p>
+        </div>
+
+        <div class="cards-grid cards-grid--3">
+
+          <div class="service-card fade-up">
+            <span class="service-card-badge">Most Requested</span>
+            <h3>Pre-Purchase Property Inspection</h3>
+            <div class="service-card-price">$350 – $500</div>
+            <p>A full structural and quality assessment before you buy. Know exactly what you're getting into before you commit.</p>
+            <div class="service-card-delivery">
+              <i data-lucide="clock" width="14" height="14"></i>
+              On-site visit + written report within 48 hours
+            </div>
+          </div>
+
+          <div class="service-card fade-up">
+            <span class="service-card-badge">Most Requested</span>
+            <h3>Renovation Audit</h3>
+            <div class="service-card-price">$400 – $550</div>
+            <p>Independent review of your plans, quotes, and contractor proposals. Catch the red flags before you sign.</p>
+            <div class="service-card-delivery">
+              <i data-lucide="clock" width="14" height="14"></i>
+              On-site or remote review + written audit report
+            </div>
+          </div>
+
+          <div class="service-card fade-up">
+            <span class="service-card-badge">Core Service</span>
+            <h3>Full Project Management</h3>
+            <div class="service-card-price">$600 – $1,000<span class="price-suffix">/month</span></div>
+            <p>End-to-end management. You stay informed, we handle everything — from contractors to timelines to quality.</p>
+            <div class="service-card-delivery">
+              <i data-lucide="clock" width="14" height="14"></i>
+              Active management with weekly client reporting
+            </div>
+          </div>
+
+        </div>
+
+        <a href="services.html" class="snapshot-link">
+          View all services
+          <i data-lucide="arrow-right" width="16" height="16"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══ PROCESS TEASER ═══════════════════════════════ -->
+    <section class="process-teaser" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="process-teaser-inner">
+          <span class="section-label">How It Works</span>
+          <h2 id="process-heading" class="section-heading">A clear process. A trusted advisor. No surprises.</h2>
+          <p>
+            We follow a structured, transparent approach on every engagement —
+            so you always know what you're getting, what it costs, and what happens next.
+          </p>
+
+          <div class="steps-row fade-up">
+            <div class="step-item">
+              <span class="step-num">1</span>
+              <span class="step-label">Contact Us</span>
+            </div>
+            <div class="step-item">
+              <span class="step-num">2</span>
+              <span class="step-label">Confirm Scope</span>
+            </div>
+            <div class="step-item">
+              <span class="step-num">3</span>
+              <span class="step-label">Written Report</span>
+            </div>
+            <div class="step-item">
+              <span class="step-num">4</span>
+              <span class="step-label">Decide with Confidence</span>
+            </div>
+          </div>
+
+          <a href="how-it-works.html" class="text-link">
+            See how it works
+            <i data-lucide="arrow-right" width="16" height="16"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT TEASER ══════════════════════════════════ -->
+    <section class="about-teaser" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-teaser-inner">
+          <div>
+            <span class="section-label">About Us</span>
+            <h2 id="about-heading" class="section-heading">An advisor, not a contractor.</h2>
+            <p>
+              Vera Consulting was built on a simple principle: people spending serious money
+              on property in Georgia deserve an independent expert in their corner. Someone who
+              has seen what goes wrong, knows how to prevent it, and has no financial reason
+              to mislead you.
+            </p>
+            <a href="about.html" class="text-link">
+              About Vera Consulting
+              <i data-lucide="arrow-right" width="16" height="16"></i>
+            </a>
+          </div>
+          <div class="about-teaser-visual">
+            <img
+              src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80&auto=format&fit=crop"
+              alt="Tbilisi architecture — a clean modern interior representing premium advisory"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FINAL CTA ═════════════════════════════════════ -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to protect your investment?</h2>
+        <p>Book a paid consultation and get expert, independent advice — before you commit to a single dollar.</p>
+        <a href="contact.html" class="btn btn-gold">Book a Consultation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Vera <span>Consulting</span></div>
+        <p>Independent Property &amp; Project Advisory — Georgia</p>
+        <p class="footer-tagline">"We work for you. Not the contractor."</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="services.html">Services</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vera Consulting. All rights reserved.</p>
+      <p>Vera Consulting is an independent advisory firm. We have no financial relationship with any contractor, developer, or real estate agent.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  </script>
+</body>
+</html>

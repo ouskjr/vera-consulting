@@ -1,0 +1,120 @@
+/* ─── Situation sections ──────────────────────── */
+
+.situation {
+  padding: var(--section-padding-mobile);
+}
+
+@media (min-width: 1024px) {
+  .situation {
+    padding: var(--section-padding-desktop);
+  }
+}
+
+.situation:nth-child(even) {
+  background: var(--cream-dark);
+}
+
+.situation-header {
+  margin-bottom: 48px;
+  max-width: 700px;
+}
+
+.situation-header h2 {
+  margin-bottom: 16px;
+}
+
+.situation-header p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* ─── Full service cards ─────────────────────── */
+
+.service-full-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 36px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.service-full-card:hover {
+  box-shadow: 0 8px 32px rgba(28, 58, 47, 0.08);
+  transform: translateY(-2px);
+}
+
+.service-full-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.service-full-card h3 {
+  font-size: 1.3rem;
+  color: var(--green);
+  flex: 1;
+  min-width: 200px;
+}
+
+.service-full-card .service-card-badge {
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.service-full-card .price-tag {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 16px;
+}
+
+.service-full-card .price-tag span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.service-full-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.service-full-card .service-card-delivery {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.service-full-card .service-card-delivery svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--gold);
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .services-list--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}

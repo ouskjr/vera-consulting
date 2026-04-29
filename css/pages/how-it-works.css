@@ -1,0 +1,143 @@
+/* ─── Steps ──────────────────────────────────── */
+
+.steps-section {
+  padding: var(--section-padding-mobile);
+  background: var(--cream);
+}
+
+@media (min-width: 1024px) {
+  .steps-section {
+    padding: var(--section-padding-desktop);
+  }
+}
+
+.step-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.step-block:first-child {
+  padding-top: 0;
+}
+
+.step-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+@media (min-width: 1024px) {
+  .step-block {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 64px 0;
+  }
+
+  .step-block--reverse .step-num-col {
+    order: 2;
+  }
+
+  .step-block--reverse .step-text-col {
+    order: 1;
+  }
+}
+
+.step-num-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .step-num-col {
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .step-block--reverse .step-num-col {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.step-big-num {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 12vw, 9rem);
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  opacity: 0.25;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.step-num-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.step-text-col h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  margin-bottom: 16px;
+}
+
+.step-text-col p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ─── Commitments ────────────────────────────── */
+
+.commitments {
+  background: var(--green);
+  padding: var(--section-padding-mobile);
+}
+
+@media (min-width: 1024px) {
+  .commitments {
+    padding: var(--section-padding-desktop);
+  }
+}
+
+.commitments h2 {
+  color: var(--white);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.commitments-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .commitments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .commitments-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.commitment-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(184, 151, 90, 0.15);
+  color: var(--gold);
+  margin-bottom: 16px;
+}

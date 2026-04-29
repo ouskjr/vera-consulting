@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Vera Consulting | Get Expert Property Advice in Georgia</title>
+  <meta name="description" content="Reach out via WhatsApp, phone, or book directly via Google Calendar. We respond within 24 hours and advise on the right service for your situation." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <!-- Google Calendar Appointment Scheduling -->
+  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
+  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages/contact.css" />
+
+  <style>
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══════════════════════════════════ -->
+  <nav class="nav nav--solid" id="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Vera <span>Consulting</span></a>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold nav-cta">Book a Consultation</a>
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="navMobile">
+    <nav class="nav-mobile-links">
+      <a href="services.html">Services</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-mobile-footer">
+      <a href="contact.html" class="btn btn-gold">Book a Consultation</a>
+      <a href="https://wa.me/995595400404?text=Hi%2C%20I%27m%20interested%20in%20a%20Vera%20Consulting%20service%20for%20a%20property%20in%20Georgia."
+         class="nav-mobile-whatsapp" target="_blank" rel="noopener noreferrer">
+        <i data-lucide="message-circle" width="18" height="18"></i>
+        Message on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ═══ PAGE HERO ════════════════════════════════════ -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label section-label--center">Get in Touch</span>
+        <h1 id="page-title">Let's talk about your project.</h1>
+        <p>
+          Tell us what you're dealing with — where you are in the process, what the property is,
+          and what your main concern is. We'll confirm whether we can help, which service fits,
+          and what it will cost.
+        </p>
+        <p class="page-hero-note">
+          No free discovery calls. We respect your time by being direct from the start.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT CARDS ═════════════════════════════════ -->
+    <section class="contact-body">
+      <div class="container">
+        <div class="contact-cards">
+
+          <!-- WhatsApp + Phone -->
+          <div class="contact-card contact-card--featured fade-up">
+            <div class="contact-card-icon" aria-hidden="true">
+              <i data-lucide="phone" width="20" height="20"></i>
+            </div>
+            <span class="contact-card-badge">Fastest Response</span>
+            <h3>Call or WhatsApp</h3>
+            <div class="contact-card-number">+995 595 400 404</div>
+            <p>
+              Message or call us directly with your project details.
+              We respond within a few hours during business hours.
+            </p>
+            <div class="contact-card-detail">
+              <i data-lucide="clock" width="14" height="14"></i>
+              Monday–Friday, 9am–6pm Tbilisi time (UTC+4)
+            </div>
+            <div class="contact-card-actions">
+              <a
+                href="https://wa.me/995595400404?text=Hi%2C%20I%27m%20interested%20in%20a%20Vera%20Consulting%20service%20for%20a%20property%20in%20Georgia."
+                class="btn btn-gold"
+                target="_blank" rel="noopener noreferrer"
+              >
+                <i data-lucide="message-circle" width="16" height="16"></i>
+                Message on WhatsApp
+              </a>
+              <a href="tel:+995595400404" class="btn btn-ghost">
+                <i data-lucide="phone" width="16" height="16"></i>
+                Call +995 595 400 404
+              </a>
+            </div>
+          </div>
+
+          <!-- Google Calendar booking -->
+          <div class="contact-card fade-up">
+            <div class="contact-card-icon" aria-hidden="true">
+              <i data-lucide="calendar" width="20" height="20"></i>
+            </div>
+            <h3>Book a Consultation</h3>
+            <p>
+              Ready to proceed? Book directly via our Google Calendar scheduling page.
+              Pick a date and time that works for you — we'll confirm and prepare.
+            </p>
+            <div class="contact-card-detail">
+              <i data-lucide="video" width="14" height="14"></i>
+              Video or phone call — your choice
+            </div>
+            <div class="contact-card-detail">
+              <i data-lucide="clock" width="14" height="14"></i>
+              Fee agreed before the call — no surprises
+            </div>
+            <div class="contact-card-actions">
+              <script>
+              (function() {
+                var target = document.currentScript;
+                window.addEventListener('load', function() {
+                  calendar.schedulingButton.load({
+                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0D20G3wAKSYM7ETwRjSUpOaVwa1swiBJMWfrouYwXi53lTdkv8ueuN_GwcvC3bdBnI2lue5YYy?gv=true',
+                    color: '#B8975A',
+                    label: 'Book an appointment',
+                    target,
+                  });
+                });
+              })();
+              </script>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ LOCATION ══════════════════════════════════════ -->
+    <section class="contact-location" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="contact-location-inner">
+          <div class="location-heading-wrap">
+            <div class="location-icon" aria-hidden="true">
+              <i data-lucide="map-pin" width="18" height="18"></i>
+            </div>
+            <h3 id="location-heading">Where we operate</h3>
+          </div>
+          <div class="location-divider" aria-hidden="true"></div>
+          <p>
+            Vera Consulting is based in Tbilisi, Georgia. We operate across Tbilisi and surrounding
+            areas for on-site services. Remote services — including document audits, cost reviews,
+            and investment feasibility studies — are available to clients anywhere in the world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Vera <span>Consulting</span></div>
+        <p>Independent Property &amp; Project Advisory — Georgia</p>
+        <p class="footer-tagline">"We work for you. Not the contractor."</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="services.html">Services</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vera Consulting. All rights reserved.</p>
+      <p>Vera Consulting is an independent advisory firm. We have no financial relationship with any contractor, developer, or real estate agent.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script>if (typeof lucide !== 'undefined') lucide.createIcons();</script>
+</body>
+</html>
