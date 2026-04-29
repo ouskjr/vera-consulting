@@ -160,6 +160,70 @@
   line-height: 1.7;
 }
 
+/* ─── Proof ─────────────────────────────────── */
+
+.proof {
+  background: var(--cream-dark);
+  padding: var(--section-padding-mobile);
+}
+
+@media (min-width: 1024px) {
+  .proof {
+    padding: var(--section-padding-desktop);
+  }
+}
+
+.proof-head {
+  max-width: 700px;
+  margin-bottom: 44px;
+}
+
+.proof-head h2 {
+  margin-bottom: 16px;
+}
+
+.proof-head p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .proof-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.proof-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.proof-item svg {
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+
+.proof-item h3 {
+  color: var(--green);
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.proof-item p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
 /* ─── Who We Serve ───────────────────────────── */
 
 .serve {

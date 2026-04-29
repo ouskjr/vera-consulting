@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Vera Consulting | Get Expert Property Advice in Georgia</title>
   <meta name="description" content="Reach out via WhatsApp, phone, or book directly via Google Calendar. We respond within 24 hours and advise on the right service for your situation." />
+  <link rel="canonical" href="https://vera-consulting.netlify.app/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Vera Consulting" />
+  <meta property="og:description" content="Message, call, or book a consultation for independent property advice in Georgia." />
+  <meta property="og:url" content="https://vera-consulting.netlify.app/contact" />
+  <meta property="og:site_name" content="Vera Consulting" />
+  <meta property="og:image" content="https://vera-consulting.netlify.app/images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Vera Consulting" />
+  <meta name="twitter:description" content="Book independent property and project advice for Georgia." />
+  <meta name="twitter:image" content="https://vera-consulting.netlify.app/images/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
 
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-
-  <!-- Google Calendar Appointment Scheduling -->
-  <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
-  <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
@@ -53,8 +60,8 @@
     </div>
   </nav>
 
-  <div class="nav-mobile" id="navMobile">
-    <nav class="nav-mobile-links">
+  <div class="nav-mobile" id="navMobile" aria-hidden="true" inert>
+    <nav class="nav-mobile-links" aria-label="Mobile navigation">
       <a href="services.html">Services</a>
       <a href="how-it-works.html">How It Works</a>
       <a href="about.html">About</a>
@@ -83,7 +90,7 @@
           and what it will cost.
         </p>
         <p class="page-hero-note">
-          No free discovery calls. We respect your time by being direct from the start.
+          Paid consultations are available after we confirm your project is a fit.
         </p>
       </div>
     </section>
@@ -144,19 +151,15 @@
               Fee agreed before the call — no surprises
             </div>
             <div class="contact-card-actions">
-              <script>
-              (function() {
-                var target = document.currentScript;
-                window.addEventListener('load', function() {
-                  calendar.schedulingButton.load({
-                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0D20G3wAKSYM7ETwRjSUpOaVwa1swiBJMWfrouYwXi53lTdkv8ueuN_GwcvC3bdBnI2lue5YYy?gv=true',
-                    color: '#B8975A',
-                    label: 'Book an appointment',
-                    target,
-                  });
-                });
-              })();
-              </script>
+              <a
+                href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0D20G3wAKSYM7ETwRjSUpOaVwa1swiBJMWfrouYwXi53lTdkv8ueuN_GwcvC3bdBnI2lue5YYy?gv=true"
+                class="btn btn-gold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="calendar-check" width="16" height="16"></i>
+                Book a Consultation
+              </a>
             </div>
           </div>
 
@@ -201,7 +204,7 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Vera Consulting. All rights reserved.</p>
+      <p>© 2026 Vera Consulting. All rights reserved.</p>
       <p>Vera Consulting is an independent advisory firm. We have no financial relationship with any contractor, developer, or real estate agent.</p>
     </div>
   </footer>

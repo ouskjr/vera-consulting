@@ -5,12 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services | Vera Consulting — Property &amp; Project Advisory Georgia</title>
   <meta name="description" content="Pre-purchase inspections, renovation audits, full project management, and more. Independent advisory services for property buyers and investors in Georgia." />
+  <link rel="canonical" href="https://vera-consulting.netlify.app/services" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Services | Vera Consulting" />
+  <meta property="og:description" content="Compare independent property inspection, renovation audit, project management, and snagging services in Georgia." />
+  <meta property="og:url" content="https://vera-consulting.netlify.app/services" />
+  <meta property="og:site_name" content="Vera Consulting" />
+  <meta property="og:image" content="https://vera-consulting.netlify.app/images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vera Consulting Services" />
+  <meta name="twitter:description" content="Independent property advisory services for buyers, renovators, and remote owners in Georgia." />
+  <meta name="twitter:image" content="https://vera-consulting.netlify.app/images/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
 
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
 
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/variables.css" />
@@ -49,8 +60,8 @@
     </div>
   </nav>
 
-  <div class="nav-mobile" id="navMobile">
-    <nav class="nav-mobile-links">
+  <div class="nav-mobile" id="navMobile" aria-hidden="true" inert>
+    <nav class="nav-mobile-links" aria-label="Mobile navigation">
       <a href="services.html" class="active">Services</a>
       <a href="how-it-works.html">How It Works</a>
       <a href="about.html">About</a>
@@ -80,6 +91,53 @@
         <p class="page-hero-note">
           All fees are fixed or range-based and agreed in writing before we begin. No surprises.
         </p>
+      </div>
+    </section>
+
+    <!-- ═══ SERVICE COMPARISON ═══════════════════════════ -->
+    <section class="service-compare" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="situation-header">
+          <span class="section-label">Compare Services</span>
+          <h2 id="compare-heading">Choose the right level of support.</h2>
+          <p>
+            A quick view of the most common engagements, what each one is best for,
+            and the deliverable you receive.
+          </p>
+        </div>
+
+        <div class="service-compare-table" role="table" aria-label="Service comparison">
+          <div class="service-compare-row service-compare-row--head" role="row">
+            <div role="columnheader">Service</div>
+            <div role="columnheader">Best for</div>
+            <div role="columnheader">Deliverable</div>
+            <div role="columnheader">Typical fee</div>
+          </div>
+          <div class="service-compare-row" role="row">
+            <div role="cell">Pre-Purchase Inspection</div>
+            <div role="cell">Buyers who need hidden defects and risks identified before committing.</div>
+            <div role="cell">On-site inspection plus written report within 48 hours.</div>
+            <div role="cell">$350–$500</div>
+          </div>
+          <div class="service-compare-row" role="row">
+            <div role="cell">Renovation Audit</div>
+            <div role="cell">Owners reviewing plans, contractor quotes, or scope before signing.</div>
+            <div role="cell">Written audit with pricing checks, gaps, and red flags.</div>
+            <div role="cell">$400–$550</div>
+          </div>
+          <div class="service-compare-row" role="row">
+            <div role="cell">Full Project Management</div>
+            <div role="cell">Clients who want contractor coordination, timeline control, and quality oversight.</div>
+            <div role="cell">Active management with weekly client reporting.</div>
+            <div role="cell">$600–$1,000/month</div>
+          </div>
+          <div class="service-compare-row" role="row">
+            <div role="cell">Snagging Inspection</div>
+            <div role="cell">Owners checking final handover before accepting work or making final payment.</div>
+            <div role="cell">Formal punch list and written snagging report.</div>
+            <div role="cell">$300–$450</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -330,7 +388,7 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Vera Consulting. All rights reserved.</p>
+      <p>© 2026 Vera Consulting. All rights reserved.</p>
       <p>Vera Consulting is an independent advisory firm. We have no financial relationship with any contractor, developer, or real estate agent.</p>
     </div>
   </footer>

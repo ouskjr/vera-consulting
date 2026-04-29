@@ -29,6 +29,84 @@
   line-height: 1.75;
 }
 
+/* ─── Service comparison ─────────────────────── */
+
+.service-compare {
+  padding: var(--section-padding-mobile);
+  background: var(--cream);
+}
+
+@media (min-width: 1024px) {
+  .service-compare {
+    padding: var(--section-padding-desktop);
+  }
+}
+
+.service-compare-table {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+}
+
+.service-compare-row {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+.service-compare-row:first-child {
+  border-top: 0;
+}
+
+.service-compare-row > div {
+  padding: 18px 20px;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  border-top: 1px solid var(--border);
+}
+
+.service-compare-row > div:first-child {
+  border-top: 0;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.service-compare-row--head {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .service-compare-row,
+  .service-compare-row--head {
+    display: grid;
+    grid-template-columns: 1.1fr 1.7fr 1.6fr 0.8fr;
+  }
+
+  .service-compare-row > div {
+    border-top: 0;
+    border-left: 1px solid var(--border);
+  }
+
+  .service-compare-row > div:first-child {
+    border-left: 0;
+  }
+
+  .service-compare-row--head {
+    background: var(--green);
+  }
+
+  .service-compare-row--head > div,
+  .service-compare-row--head > div:first-child {
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
 /* ─── Full service cards ─────────────────────── */
 
 .service-full-card {
